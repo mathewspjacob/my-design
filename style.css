@@ -1,0 +1,37 @@
+@font-face{
+    src: url('roboto.ttf');
+    font-family: roboto;
+}
+
+@font-face{
+    src: url('open sans.ttf');
+    font-family: open sans;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    border-bottom: 1px solid #d1d1d1;
+    /*justify-content: space-around;*/
+    /*width: 100%;*/
+}
+
+.logo{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.menu li{
+    padding: 20px;
+}
