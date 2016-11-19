@@ -4,12 +4,40 @@
 
         <link rel="stylesheet" type="" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function{
+                $(.close-icon).click(function(){
+                    $(".overlay").removeClass("open-animate");
+                    $(".overlay").addClass("close-animate");
+                });
+                $(.menu-icon).click(function(){
+                    $(".overlay").removeClass("close-animate");
+                    $(".overlay").addClass("open-animate");
+                });
+            });
+        </script>
     </head>
 
     <body>
+
+        <div class="overlay">
+            <i class="fa fa-times close-icon" style="margin:20px;"></i>
+            <ul>
+                <li>Craftywebapp</li>
+                <li>Home</li>
+                <li>Downloads</li>
+                <li>Services</li>
+                <li>Abiut Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
         <div class="header">
             <div class="logo">
                 Craftywebapp
+                <i class="fa fa-bars menu-icon"></i>
             </div>
 
             <ul class="menu">
@@ -22,11 +50,36 @@
         </div>
 
         <div class="main-content">
+            <div class="sidebar">
+                Resent Posts :) <br>
+                CSS is Awesome <br><br>
+                CSS is Awesome <br><br>
+                CSS is Awesome <br><br>
+                CSS is Awesome <br><br>
+            </div>
 
+            <div class="post">
+                <p>CSS Flexbox is really powerfull !</p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo autem iure ipsam. Reiciendis consequatur neque est dignissimos nesciunt velit itaque? Id, perferendis, nisi. Dicta molestiae nulla, vel at facere distinctio?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam tempore natus, ducimus, eligendi ex non! Fuga laudantium sunt quisquam. Totam soluta nisi deserunt vitae voluptas atque obcaecati ut distinctio, perferendis!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugit est perspiciatis eaque enim! Veniam quae quam iusto sint. Debitis, molestiae, explicabo! Animi reiciendis ratione natus veritatis assumenda vel repudiandae.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe commodi impedit ut distinctio, in, quae tenetur cupiditate. Accusamus voluptate at voluptatem hic totam, ad laboriosam illo ducimus reprehenderit, nostrum, doloribus?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore necessitatibus suscipit illum iure libero consectetur sapiente officiis excepturi quaerat autem nisi eligendi sed alias sit, vel, sequi perferendis eos ipsam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ad unde fuga amet officiis odit dolore provident similique non pariatur excepturi ipsa reiciendis earum, nisi accusamus, odio tempore suscipit blanditiis?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore consectetur facere molestias error cupiditate laborum, sequi sint quod quisquam culpa quasi iusto dolore aperiam ullam a quaerat dignissimos at blanditiis?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet atque, quia voluptates nobis obcaecati sunt iusto nihil consequuntur sed culpa, aliquam laboriosam facilis molestias maxime ex doloremque. Deserunt, laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sapiente quaerat perspiciatis atque! Numquam expedita officia sint eveniet illum nihil repellendus assumenda suscipit nam consequuntur molestias necessitatibus nulla, a tempora.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quas asperiores voluptatum, dolore distinctio eveniet reprehenderit numquam corporis deleniti ullam quaerat itaque aut obcaecati adipisci provident laudantium voluptates. Quibusdam, natus?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero itaque, iure ipsam nobis accusantium accusamus dolore temporibus consequatur harum fugit blanditiis eos consequuntur voluptatem nostrum totam? Accusamus deleniti, facilis ut.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt non repudiandae eaque modi optio a id asperiores? Asperiores, tenetur nesciunt.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi accusamus aut, dolorem expedita natus atque rerum eligendi cumque corporis maiores repudiandae molestias ipsam sit, iure quam minus enim recusandae fugit, inventore placeat. Quos, impedit aperiam, animi labore quam qui <br><br>
+                <iframe src="" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+                <br><br>
+            </div>
         </div>
 
         <div class="footer">
-
+            &copy; 2016 Craftywebapp. All Rights Reserved.
         </div>
     </body>
 </html>
