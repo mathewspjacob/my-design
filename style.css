@@ -151,7 +151,7 @@ body{
     font-weight: bold;
 }
 
-@media(max-width: 1000px){
+@media (max-width: 1000px){
     .main-content{
         -webkit-flex-direction: column;
         -moz-flex-direction: column;
